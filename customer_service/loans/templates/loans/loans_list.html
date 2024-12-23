@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loan List</title>
+</head>
+<body>
+    <h1>Loan List</h1>
+    <ul>
+        {% for loan in loans %}
+            <li>{{ loan.customer }}: {{ loan.amount }} @ {{ loan.interest_rate }}% for {{ loan.duration_months }} months</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
